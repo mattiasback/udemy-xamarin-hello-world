@@ -17,9 +17,5 @@ namespace HelloWorld
             InitializeComponent();
         }
 
-        private void Button_OnClicked(object sender, EventArgs e)
-        {
-            DisplayAlert("Title", "Hello World", "OK");
-        }
     }
 }
