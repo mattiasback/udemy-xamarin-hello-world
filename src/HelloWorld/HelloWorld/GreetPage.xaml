@@ -5,8 +5,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="HelloWorld.GreetPage">
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="Hello World"></Label>
-        <Slider ></Slider>
+    <StackLayout BindingContext="{x:Reference GreetSlider}" 
+                 HorizontalOptions="Center" 
+                 VerticalOptions="Center">
+        <BoxView 
+            Color="Green"
+            Opacity="{Binding Value}"/>
+        <Label
+            Text="{Binding Value, StringFormat='Value is {0:F2}'}"
+            Opacity="{Binding Value}" />
+        <Slider
+            x:Name="GreetSlider"/>
     </StackLayout>
 </ContentPage>

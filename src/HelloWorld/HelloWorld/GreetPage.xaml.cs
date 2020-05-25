@@ -15,6 +15,8 @@ namespace HelloWorld
         public GreetPage()
         {
             InitializeComponent();
+
+            GreetSlider.Value = 0;
         }
 
     }
