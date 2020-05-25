@@ -6,8 +6,7 @@
              mc:Ignorable="d"
              x:Class="HelloWorld.GreetPage">
     <StackLayout BindingContext="{x:Reference GreetSlider}" 
-                 HorizontalOptions="Center" 
-                 VerticalOptions="Center">
+                 HorizontalOptions="Center" >
         <BoxView 
             Color="Green"
             Opacity="{Binding Value}"/>
