@@ -6,7 +6,10 @@
              mc:Ignorable="d"
              x:Class="HelloWorld.GreetPage">
     <ContentPage.Padding>
-        0, 20, 0, 0
+        <OnPlatform x:TypeArguments="Thickness"
+            iOS="0, 20, 0, 0"
+            Android="0, 5, 0, 0">
+        </OnPlatform>
     </ContentPage.Padding>
     <StackLayout BindingContext="{x:Reference GreetSlider}" 
                  HorizontalOptions="Center" >
