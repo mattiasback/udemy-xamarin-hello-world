@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="HelloWorld.GreetPage">
+             x:Class="HelloWorld.GreetPage"
+             Padding="0, 20, 0, 0">
     <StackLayout BindingContext="{x:Reference GreetSlider}" 
                  HorizontalOptions="Center" >
         <BoxView 
