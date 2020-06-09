@@ -24,7 +24,7 @@ namespace HelloWorld
                     break;
                 }
                 default: {
-                    Padding = new Thickness(0, 0, 0, 0);
+                    Padding = new Thickness(0, 5, 0, 0);
                     break;
                 }
             };
