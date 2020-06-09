@@ -18,7 +18,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            GreetSlider.Value = 0;
+            FontSizeSlider.Value = 16;
         }
     }
 

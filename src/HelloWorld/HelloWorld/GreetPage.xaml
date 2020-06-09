@@ -11,15 +11,22 @@
             Android="0, 5, 0, 0">
         </OnPlatform>
     </ContentPage.Padding>
-    <StackLayout BindingContext="{x:Reference GreetSlider}" 
-                 HorizontalOptions="Center" >
-        <BoxView 
-            Color="Green"
-            Opacity="{Binding Value}"/>
+    <StackLayout BindingContext="{x:Reference FontSizeSlider}" 
+                 HorizontalOptions="Center">
+        <Button 
+            x:Name="NextQuoteButton"
+            Text="Next"
+            Font="Medium"/>
         <Label
-            Text="{Binding Value, StringFormat='Value is {0:F2}'}"
-            Opacity="{Binding Value}" />
+            Text="{Binding Value, StringFormat='Font Size: {0}'}"
+            FontSize="{Binding Value}"/>
         <Slider
-            x:Name="GreetSlider"/>
+            x:Name="FontSizeSlider"
+            Maximum="32"
+            Minimum="16"/>
+        <Label
+            x:Name="QuoteLabel"
+            Text="Quote1"
+            FontSize="{Binding Value}"/>
     </StackLayout>
 </ContentPage>
